@@ -66,39 +66,39 @@ const Header = () => {
         </Container>
       </Navbar>
     </section> */
-
-    <Container
-      fluid
-      style={{ boxShadow: "2px solid black", marginBottom: "2rem" }}
-    >
-      <Row>
-        <Col>
-          <Navbar bg="" expand="md">
-            <Container>
-              <Navbar.Brand href="#">
-                <span className="ms-4 text-[#EA3A51]">Maruti</span>
-              </Navbar.Brand>
-              <Navbar.Toggle
-                aria-controls="my-nav"
-                style={{ marginLeft: "3rem" }}
-              />
-              <Navbar.Collapse id="my-nav">
-                <Nav className="me-auto fw-bold">
-                  <Nav.Link href="#">Vehicles</Nav.Link>
-                  <Nav.Link href="#">Blocks</Nav.Link>
-                  <Nav.Link href="#">Services</Nav.Link>
-                  <Nav.Link href="#">Experience</Nav.Link>
-                </Nav>
-                <Nav className="me-auto fw-bold">
-                  <Nav.Link href="#">contact</Nav.Link>
-                  <Nav.Link href="#">Tabs</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </Col>
-      </Row>
-      {/* <Row>
+    <section className="sticky top-0 left-0 z-10 bg-white">
+      <Container
+        fluid
+        style={{ boxShadow: "2px solid black", marginBottom: "2rem" }}
+      >
+        <Row>
+          <Col>
+            <Navbar bg="" expand="md">
+              <Container>
+                <Navbar.Brand href="#">
+                  <span className="ms-4 text-[#EA3A51]">Maruti</span>
+                </Navbar.Brand>
+                <Navbar.Toggle
+                  aria-controls="my-nav"
+                  style={{ marginLeft: "3rem" }}
+                />
+                <Navbar.Collapse id="my-nav">
+                  <Nav className="me-auto fw-bold">
+                    <Nav.Link href="#">Vehicles</Nav.Link>
+                    <Nav.Link href="#">Blocks</Nav.Link>
+                    <Nav.Link href="#">Services</Nav.Link>
+                    <Nav.Link href="#">Experience</Nav.Link>
+                  </Nav>
+                  <Nav className="me-auto fw-bold">
+                    <Nav.Link href="#">contact</Nav.Link>
+                    <Nav.Link href="#">Tabs</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </Col>
+        </Row>
+        {/* <Row>
           <Col>
             <Navbar bg="" expand="md">
               <Container>
@@ -122,7 +122,8 @@ const Header = () => {
             </Navbar>
           </Col>
         </Row> */}
-    </Container>
+      </Container>
+    </section>
   );
 };
 

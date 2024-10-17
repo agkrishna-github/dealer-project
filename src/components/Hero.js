@@ -9,8 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaQuestion } from "react-icons/fa";
 import { HiWrenchScrewdriver } from "react-icons/hi2";
-import { IoCallOutline } from "react-icons/io5";
+
 import { TbSteeringWheel } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import { IoCallOutline } from "react-icons/io5";
 
 const Arrow = (props) => {
   const { className, style, onClick } = props;
@@ -139,58 +141,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <div className="slider-container w-11/12 mx-auto min-h-[500px]">
-        <Slider {...settings}>
-          <div className="max-h-[400px] max-w-[400px] flex flex-col gap-y-5">
-            <img
-              src={img1}
-              alt="slider1"
-              width={664}
-              height={374}
-              // className="object-fill object-center overflow-hidden"
-              className="h-[100%] w-[100%]"
-              // style={{ objectFit: "fill" }}
-            />
-            <h5 className="text-center">S Presso</h5>
-            <p className="text-center">Maruti S Presso</p>
-          </div>
 
-          <div className="max-h-[400px] max-w-[400px]">
-            <img
-              src={img2}
-              alt="slider2"
-              className="h-[100%] w-[100%]"
-              width={872}
-              height={578}
-            />
-            <h5 className="text-center">Ciaz</h5>
-            <p className="text-center">Maruti Ciaz</p>
-          </div>
-          <div className="max-h-[400px] max-w-[400px]">
-            <img
-              src={img3}
-              alt="slider3"
-              className="h-[100%] w-[100%]"
-              width={370}
-              height={208}
-            />
-            <h5 className="text-center">Wagon R</h5>
-            <p className="text-center">Maruti Wagon R</p>
-          </div>
-          <div className="max-h-[400px] max-w-[400px]">
-            <img
-              src={img4}
-              alt="slider4"
-              className="h-[100%] w-[100%]"
-              width={872}
-              height={578}
-            />
-            <h5 className="text-center">Alto</h5>
-            <p className="text-center">Maruti Alto</p>
-          </div>
-        </Slider>
-      </div> */}
-      <div className="mb-10">
+      <div className="mb-10 lg:w-5/6 lg:mx-auto">
         <Slider className="flex justify-center items-center">
           <div className="max-w-sm rounded overflow-hidden h-[350px]">
             <img className="w-full" src={img1} alt="" />
@@ -324,6 +276,35 @@ const Hero = () => {
               <button className="inline-block cursor-pointer p-3 rounded-lg">
                 Explore
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="my-12">
+        <Link to="/details">
+          <h1>Go To Details Page</h1>
+        </Link>
+      </div>
+
+      <div className="p-2 flex flex-col bg-slate-500 text-white">
+        <div className="p-2">
+          <h4 className="mb-3">Maruti Dealers</h4>
+          <p className="mb-3">
+            Contact info <b> rksmotors@gmail.com</b>
+          </p>
+          <p className="mb-3">
+            All rights Reserved for RKS MOTORS PVT LTD &copy; 2024
+          </p>
+          <div className="mt-10 flex flex-col gap-2">
+            <h4>Contact Details</h4>
+            <h4>RKS MOTORS PVT LTD</h4>
+            <div>Somajiguda</div>
+            <div>Hyderabad</div>
+            <div className="flex mt-3 gap-2">
+              <div>
+                <IoCallOutline />
+              </div>
+              <p>9898989898</p>
             </div>
           </div>
         </div>
