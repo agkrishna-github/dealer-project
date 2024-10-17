@@ -1,0 +1,335 @@
+import React, { useState } from "react";
+import ciazImg from "../images/ciaz.webp";
+import img1 from "../images/img1.webp";
+import img2 from "../images/img2.jpg";
+import img3 from "../images/img3.webp";
+import img4 from "../images/img4.jpg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaQuestion } from "react-icons/fa";
+import { HiWrenchScrewdriver } from "react-icons/hi2";
+import { IoCallOutline } from "react-icons/io5";
+import { TbSteeringWheel } from "react-icons/tb";
+
+const Arrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
+const Hero = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <Arrow />,
+    prevArrow: <Arrow />,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const [vehNav, setVehNav] = useState("#");
+  return (
+    <section className="">
+      <div className="p-1 flex flex-col-reverse mb-3 gap-3 min-h-32 main">
+        <div className="flex  justify-center items-center">
+          <img
+            src={ciazImg}
+            alt="Hero Image"
+            width={664}
+            height={374}
+            className="h-full w-full"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-center gap-y-4 md:gap-y-0 h-full p-3">
+          <h2>India's Safest Car is Maruti</h2>
+          <div className="font-semibold">
+            Maruti is the best car service provider
+          </div>
+          <button className="inline-block py-3 px-2 bg-black text-white rounded-md cursor-pointer my-3">
+            Explore
+          </button>
+        </div>
+      </div>
+      <div className="p-2 min-h-[120px] bg-black text-white flex flex-col justify-center items-center gap-y-6 pb-4">
+        <h5 className="p-3 md:text-sm">
+          I am Looking for a light commercial vehicle for the Perpose of milage
+        </h5>
+        <button
+          className="inline-block px-5 py-3 bg-black text-white cursor-pointer rounded-lg"
+          style={{ border: "2px solid white" }}
+        >
+          Find
+        </button>
+      </div>
+
+      <div className="p-3 mt-10 ">
+        <h2 className="text-center p-2 mb-4">Our Vehicles</h2>
+        <div className="flex justify-center items-center gap-1 mb-3 md:text-sm md:font-bold">
+          <div
+            className={
+              vehNav === "#"
+                ? "text-red-500  border-solid border-1 border-red-500 cursor-pointer px-2 py-1"
+                : "  cursor-pointer px-2 py-1"
+            }
+            onClick={() => setVehNav("#")}
+          >
+            All
+          </div>
+          <div
+            className={
+              vehNav === "arena"
+                ? "text-red-500  border-solid border-1 border-red-500 p-3 cursor-pointer px-2 py-1"
+                : " p-3 cursor-pointer px-2 py-1"
+            }
+            onClick={() => setVehNav("arena")}
+          >
+            Arena
+          </div>
+          <div
+            className={
+              vehNav === "commercial"
+                ? "text-red-500  border-solid border-1 border-red-500 p-3 cursor-pointer px-2 py-1"
+                : " p-3 cursor-pointer px-2 py-1"
+            }
+            onClick={() => setVehNav("commercial")}
+          >
+            Commercial
+          </div>
+          <div
+            className={
+              vehNav === "nexa"
+                ? "text-red-500  border-solid border-1 border-red-500 p-3 cursor-pointer px-2 py-1"
+                : " p-3 cursor-pointer px-2 py-1"
+            }
+            onClick={() => setVehNav("nexa")}
+          >
+            Nexa
+          </div>
+          <div
+            className={
+              vehNav === "trueValue"
+                ? "text-red-500  border-solid border-1 border-red-500 p-3 cursor-pointer px-2 py-1"
+                : "p-3 cursor-pointer px-2 py-1"
+            }
+            onClick={() => setVehNav("trueValue")}
+          >
+            True Value
+          </div>
+        </div>
+      </div>
+      {/* <div className="slider-container w-11/12 mx-auto min-h-[500px]">
+        <Slider {...settings}>
+          <div className="max-h-[400px] max-w-[400px] flex flex-col gap-y-5">
+            <img
+              src={img1}
+              alt="slider1"
+              width={664}
+              height={374}
+              // className="object-fill object-center overflow-hidden"
+              className="h-[100%] w-[100%]"
+              // style={{ objectFit: "fill" }}
+            />
+            <h5 className="text-center">S Presso</h5>
+            <p className="text-center">Maruti S Presso</p>
+          </div>
+
+          <div className="max-h-[400px] max-w-[400px]">
+            <img
+              src={img2}
+              alt="slider2"
+              className="h-[100%] w-[100%]"
+              width={872}
+              height={578}
+            />
+            <h5 className="text-center">Ciaz</h5>
+            <p className="text-center">Maruti Ciaz</p>
+          </div>
+          <div className="max-h-[400px] max-w-[400px]">
+            <img
+              src={img3}
+              alt="slider3"
+              className="h-[100%] w-[100%]"
+              width={370}
+              height={208}
+            />
+            <h5 className="text-center">Wagon R</h5>
+            <p className="text-center">Maruti Wagon R</p>
+          </div>
+          <div className="max-h-[400px] max-w-[400px]">
+            <img
+              src={img4}
+              alt="slider4"
+              className="h-[100%] w-[100%]"
+              width={872}
+              height={578}
+            />
+            <h5 className="text-center">Alto</h5>
+            <p className="text-center">Maruti Alto</p>
+          </div>
+        </Slider>
+      </div> */}
+      <div className="mb-10">
+        <Slider className="flex justify-center items-center">
+          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+            <img className="w-full" src={img1} alt="" />
+            <div className="px-6 py-4">
+              <h5 className="font-bold text-xl mb-2">Spresso</h5>
+              <p className="text-gray-700 text-base">New Spresso</p>
+            </div>
+          </div>
+          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+            <img className="w-full" src={img2} alt="" />
+            <div className="px-6 py-4">
+              <h5 className="font-bold text-xl mb-2">WagonR</h5>
+              <p className="text-gray-700 text-base">New Spresso</p>
+            </div>
+          </div>
+          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+            <img className="w-full" src={img3} alt="" />
+            <div className="px-6 py-4">
+              <h5 className="font-bold text-xl mb-2">Swift</h5>
+              <p className="text-gray-700 text-base">New Spresso</p>
+            </div>
+          </div>
+          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+            <img className="w-full" src={img4} alt="" />
+            <div className="px-6 py-4">
+              <h5 className="font-bold text-xl mb-2">XL6</h5>
+              <p className="text-gray-700 text-base">New Spresso</p>
+            </div>
+          </div>
+
+          {/* <div className="h-[350px]  border-solid border-1 border-black p-2">
+            <div className="h-[300px]">
+              <img src={img1} alt="cardImage" className="w-full h-full" />
+            </div>
+            <div className="h-[200px]">
+              <h3>Maruti Suzuki</h3>
+              <p>Swift</p>
+            </div>
+          </div>
+          <div className="h-[350px] shadow-lg border-solid border-1 border-black p-2">
+            <div className="">
+              <img src={img2} alt="cardImage" className="w-full h-full" />
+            </div>
+            <h3>Maruti Suzuki</h3>
+            <p>Spresso</p>
+          </div>
+          <div className="h-[300px] shadow-lg border-solid border-1 border-black p-2">
+            <div className="">
+              <img src={img3} alt="cardImage" className="w-full h-full" />
+            </div>
+            <h3>Maruti Suzuki</h3>
+            <p>XL6</p>
+          </div>
+          <div className="h-[300px] shadow-lg border-solid border-1 border-black p-2">
+            <div className="">
+              <img src={img4} alt="cardImage" className="w-full h-full" />
+            </div>
+            <h3>Maruti Suzuki</h3>
+            <p>WagonR</p>
+          </div> */}
+        </Slider>
+      </div>
+      <div className="mt-6 w-11/12 mx-auto lg:mt-16">
+        <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
+        <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
+          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] hover:cursor-pointer  flex gap-6 p-3 dAction">
+            <div
+              className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
+              style={{ border: "2px solid red", borderRadius: "100%" }}
+            >
+              <div>
+                <FaQuestion />
+              </div>
+            </div>
+            <div>
+              <p className="p-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
+                mollitia?
+              </p>
+              <button className="inline-block cursor-pointer p-3 rounded-lg">
+                Explore
+              </button>
+            </div>
+          </div>
+          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] hover:cursor-pointer flex gap-6 p-3 dAction">
+            <div
+              className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
+              style={{ border: "2px solid red", borderRadius: "100%" }}
+            >
+              <HiWrenchScrewdriver />
+            </div>
+            <div>
+              <p className="p-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
+                mollitia?
+              </p>
+              <button className="inline-block cursor-pointer p-3 rounded-lg">
+                Explore
+              </button>
+            </div>
+          </div>
+          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] hover:cursor-pointer flex gap-6 p-3 dAction">
+            <div
+              className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
+              style={{ border: "2px solid red", borderRadius: "100%" }}
+            >
+              <IoCallOutline />
+            </div>
+            <div>
+              <p className="p-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
+                mollitia?
+              </p>
+              <button className="inline-block cursor-pointer p-3 rounded-lg">
+                Explore
+              </button>
+            </div>
+          </div>
+          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] hover:cursor-pointer flex gap-6 p-3 dAction">
+            <div
+              className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
+              style={{ border: "2px solid red", borderRadius: "100%" }}
+            >
+              <TbSteeringWheel />
+            </div>
+            <div>
+              <p className="p-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
+                mollitia?
+              </p>
+              <button className="inline-block cursor-pointer p-3 rounded-lg">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
