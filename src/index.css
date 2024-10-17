@@ -133,7 +133,7 @@ body {
   
       position: absolute !important;
       top: 23rem !important;
-      left: 9rem !important;
+      left: 10rem !important;
   
       z-index: 10;
     }
@@ -145,7 +145,7 @@ body {
     
           position: absolute !important;
           top: 23rem !important;
-          right: 12rem !important;
+          right: 10rem !important;
     
           z-index: 10;
         }

@@ -142,7 +142,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mb-10 lg:w-5/6 lg:mx-auto">
+      <div className="mb-10">
         <Slider className="flex justify-center items-center">
           <div className="max-w-sm rounded overflow-hidden h-[350px]">
             <img className="w-full" src={img1} alt="" />
@@ -172,37 +172,6 @@ const Hero = () => {
               <p className="text-gray-700 text-base">New Spresso</p>
             </div>
           </div>
-
-          {/* <div className="h-[350px]  border-solid border-1 border-black p-2">
-            <div className="h-[300px]">
-              <img src={img1} alt="cardImage" className="w-full h-full" />
-            </div>
-            <div className="h-[200px]">
-              <h3>Maruti Suzuki</h3>
-              <p>Swift</p>
-            </div>
-          </div>
-          <div className="h-[350px] shadow-lg border-solid border-1 border-black p-2">
-            <div className="">
-              <img src={img2} alt="cardImage" className="w-full h-full" />
-            </div>
-            <h3>Maruti Suzuki</h3>
-            <p>Spresso</p>
-          </div>
-          <div className="h-[300px] shadow-lg border-solid border-1 border-black p-2">
-            <div className="">
-              <img src={img3} alt="cardImage" className="w-full h-full" />
-            </div>
-            <h3>Maruti Suzuki</h3>
-            <p>XL6</p>
-          </div>
-          <div className="h-[300px] shadow-lg border-solid border-1 border-black p-2">
-            <div className="">
-              <img src={img4} alt="cardImage" className="w-full h-full" />
-            </div>
-            <h3>Maruti Suzuki</h3>
-            <p>WagonR</p>
-          </div> */}
         </Slider>
       </div>
       <div className="mt-6 w-11/12 mx-auto lg:mt-16">
