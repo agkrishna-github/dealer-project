@@ -204,7 +204,7 @@ const Hero = () => {
       <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
         <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
-          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51]  flex gap-6 p-3 dAction">
+          <div className="w-[300px] hover:bg-[#EA3A51]  flex gap-6 p-3 dAction">
             <div
               className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
               style={{ border: "2px solid red", borderRadius: "100%" }}
@@ -223,7 +223,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
+          <div className="w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
             <div
               className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
               style={{ border: "2px solid red", borderRadius: "100%" }}
@@ -240,7 +240,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
+          <div className="w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
             <div
               className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
               style={{ border: "2px solid red", borderRadius: "100%" }}
@@ -257,7 +257,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
+          <div className="w-[300px] hover:bg-[#EA3A51] flex gap-6 p-3 dAction">
             <div
               className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
               style={{ border: "2px solid red", borderRadius: "100%" }}
