@@ -25,6 +25,49 @@ const Arrow = (props) => {
   );
 };
 
+const NextArrow = (props) => (
+  <button
+    {...props}
+    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[50%] w-10 h-10 nextArrow"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+      />
+    </svg>
+  </button>
+);
+const PrevArrow = (props) => (
+  <button
+    {...props}
+    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[45%] z-30 w-10 h-10 prevArrow"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="size-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+      />
+    </svg>
+  </button>
+);
+
 const Hero = () => {
   var settings = {
     dots: false,
@@ -32,8 +75,10 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <Arrow />,
-    prevArrow: <Arrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    /* nextArrow: <Arrow />,
+    prevArrow: <Arrow />, */
     initialSlide: 0,
     responsive: [
       {
@@ -147,7 +192,7 @@ const Hero = () => {
           {...settings}
           className="flex justify-center items-center gap-x-2 w-11/12 mx-auto"
         >
-          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
             <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -160,7 +205,7 @@ const Hero = () => {
               <p className="">New Swift</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
             <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -173,7 +218,7 @@ const Hero = () => {
               <p className="">New Spresso</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
             <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -186,7 +231,7 @@ const Hero = () => {
               <p className="">New XL6</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
             <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"

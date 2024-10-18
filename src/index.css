@@ -47,16 +47,19 @@ body {
   color: red !important;
   font-size: 40px !important;
   background-color: none !important;
+  
 }
 
-.slick-arrow {
+.slick-arrow:before{
   /* font-size: 10rem !important; */
   /* color: black !important; */
   /* background-color: black !important; */
+
+content: none !important;
 }
 
 .slick-slider {
-  position: relative;
+  position: relative !important;
  
 }
 
@@ -103,6 +106,11 @@ body {
 .dAction {
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+
 }
 
 
@@ -182,7 +190,7 @@ body {
   
       position: absolute !important;
       top: 15rem !important;
-      left: 7rem !important;
+      left: 5rem !important;
   
       
     }
@@ -207,6 +215,15 @@ body {
          
           font-size: 35px !important;
           
+        }
+
+        .nextArrow {
+          left: 50% !important;
+          
+        }
+
+        .prevArrow {
+          left: 100px !important;
         }
 
     /*     .dAction {
