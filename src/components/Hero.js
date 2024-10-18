@@ -218,7 +218,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
                 mollitia?
               </p>
-              <button className="inline-block cursor-pointer p-3 rounded-lg">
+              <button className="inline-block cursor-pointer p-2 rounded-lg">
                 Explore
               </button>
             </div>
@@ -235,7 +235,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
                 mollitia?
               </p>
-              <button className="inline-block cursor-pointer p-3 rounded-lg">
+              <button className="inline-block cursor-pointer p-2 rounded-lg">
                 Explore
               </button>
             </div>
@@ -252,7 +252,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
                 mollitia?
               </p>
-              <button className="inline-block cursor-pointer p-3 rounded-lg">
+              <button className="inline-block cursor-pointer p-2 rounded-lg">
                 Explore
               </button>
             </div>
@@ -269,7 +269,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
                 mollitia?
               </p>
-              <button className="inline-block cursor-pointer p-3 rounded-lg">
+              <button className="inline-block cursor-pointer p-2 rounded-lg">
                 Explore
               </button>
             </div>
