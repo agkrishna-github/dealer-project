@@ -19,7 +19,7 @@ const Arrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black" }}
+      style={{ ...style, display: "block" }}
       onClick={onClick}
     ></div>
   );
@@ -54,7 +54,7 @@ const Hero = () => {
   const [vehNav, setVehNav] = useState("#");
   return (
     <section className="">
-      <div className="p-1 flex flex-col-reverse mb-3 gap-3 min-h-32 main">
+      <div className="p-1 flex flex-col-reverse justify-center items-center mb-3 gap-3 min-h-32 main">
         <div className="flex  justify-center items-center">
           <img
             src={ciazImg}
@@ -200,36 +200,6 @@ const Hero = () => {
             </div>
           </div>
         </Slider>
-        {/*  <Slider {...settings} className="flex justify-center items-center">
-          <div className="w-[20rem] rounded h-[350px] slideDiv">
-            <img className="w-full" src={img1} alt="" />
-            <div className="px-6 py-4">
-              <h5 className="font-bold text-xl mb-2">Spresso</h5>
-              <p className="text-gray-700 text-base">New Spresso</p>
-            </div>
-          </div>
-          <div className="w-[20rem] rounded h-[350px] slideDiv">
-            <img className="w-full" src={img2} alt="" />
-            <div className="px-6 py-4">
-              <h5 className="font-bold text-xl mb-2">WagonR</h5>
-              <p className="text-gray-700 text-base">New Spresso</p>
-            </div>
-          </div>
-          <div className="w-[20rem] rounded h-[350px] slideDiv">
-            <img className="w-full" src={img3} alt="" />
-            <div className="px-6 py-4">
-              <h5 className="font-bold text-xl mb-2">Swift</h5>
-              <p className="text-gray-700 text-base">New Spresso</p>
-            </div>
-          </div>
-          <div className="w-[20rem] rounded h-[350px] slideDiv">
-            <img className="w-full" src={img4} alt="" />
-            <div className="px-6 py-4">
-              <h5 className="font-bold text-xl mb-2">XL6</h5>
-              <p className="text-gray-700 text-base">New Spresso</p>
-            </div>
-          </div>
-        </Slider> */}
       </div>
       <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>

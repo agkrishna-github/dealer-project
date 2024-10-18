@@ -44,14 +44,15 @@ body {
 }
 
 .slick-arrow:before {
-  color: red;
-  font-size: 50px;
+  color: red !important;
+  font-size: 40px !important;
+  background-color: none !important;
 }
 
 .slick-arrow {
   /* font-size: 10rem !important; */
   /* color: black !important; */
-  background-color: black !important;
+  /* background-color: black !important; */
 }
 
 .slick-slider {
@@ -132,8 +133,8 @@ body {
     
   
       position: absolute !important;
-      top: 24rem !important;
-      left: 40rem !important;
+      top: 22rem !important;
+      left: 38rem !important;
   
       z-index: 10;
     }
@@ -142,7 +143,7 @@ body {
      
   
       position: absolute !important;
-      top: 24rem !important;
+      top: 22rem !important;
       right: 40rem !important;
   
       z-index: 10;
@@ -158,7 +159,7 @@ body {
   
       position: absolute !important;
       top: 15rem !important;
-      left: 9rem !important;
+      left: 7rem !important;
   
       z-index: 10;
     }
