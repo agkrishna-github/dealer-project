@@ -30,7 +30,7 @@ const Hero = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
@@ -45,7 +45,7 @@ const Hero = () => {
       {
         breakpoint: 720,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
@@ -69,7 +69,7 @@ const Hero = () => {
           <div className="font-semibold">
             Maruti is the best car service provider
           </div>
-          <button className="inline-block py-3 px-2 bg-black text-white rounded-md cursor-pointer my-3">
+          <button className="inline-block px-3 py-2 bg-black text-white rounded-md cursor-pointer my-3">
             Explore
           </button>
         </div>
@@ -79,7 +79,7 @@ const Hero = () => {
           I am Looking for a light commercial vehicle for the Perpose of milage
         </h5>
         <button
-          className="inline-block px-5 py-3 bg-black text-white cursor-pointer rounded-lg"
+          className="inline-block px-3 py-2 bg-black text-white cursor-pointer rounded-lg"
           style={{ border: "2px solid white" }}
         >
           Find
@@ -142,30 +142,30 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mb-10">
-        <Slider className="flex justify-center items-center">
-          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+      <div className="mb-2">
+        <Slider {...settings} className="flex justify-center items-center">
+          <div className="w-[20rem] rounded h-[350px] slideDiv">
             <img className="w-full" src={img1} alt="" />
             <div className="px-6 py-4">
               <h5 className="font-bold text-xl mb-2">Spresso</h5>
               <p className="text-gray-700 text-base">New Spresso</p>
             </div>
           </div>
-          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+          <div className="w-[20rem] rounded h-[350px] slideDiv">
             <img className="w-full" src={img2} alt="" />
             <div className="px-6 py-4">
               <h5 className="font-bold text-xl mb-2">WagonR</h5>
               <p className="text-gray-700 text-base">New Spresso</p>
             </div>
           </div>
-          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+          <div className="w-[20rem] rounded h-[350px] slideDiv">
             <img className="w-full" src={img3} alt="" />
             <div className="px-6 py-4">
               <h5 className="font-bold text-xl mb-2">Swift</h5>
               <p className="text-gray-700 text-base">New Spresso</p>
             </div>
           </div>
-          <div className="max-w-sm rounded overflow-hidden h-[350px]">
+          <div className="w-[20rem] rounded h-[350px] slideDiv">
             <img className="w-full" src={img4} alt="" />
             <div className="px-6 py-4">
               <h5 className="font-bold text-xl mb-2">XL6</h5>
@@ -174,7 +174,7 @@ const Hero = () => {
           </div>
         </Slider>
       </div>
-      <div className="mt-6 w-11/12 mx-auto lg:mt-16">
+      <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
         <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
           <div className="shadow-lg shadow-black w-[300px] hover:bg-[#EA3A51] hover:cursor-pointer  flex gap-6 p-3 dAction">
@@ -251,7 +251,7 @@ const Hero = () => {
       </div>
       <div className="my-12">
         <Link to="/details">
-          <h1>Go To Details Page</h1>
+          <h1 className="px-5 py-2">Go To Details Page</h1>
         </Link>
       </div>
 

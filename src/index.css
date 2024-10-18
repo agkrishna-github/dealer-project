@@ -43,14 +43,20 @@ body {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.slick-arrow:before {
+  color: red;
+  font-size: 50px;
+}
+
 .slick-arrow {
   /* font-size: 10rem !important; */
-  color: black !important;
+  /* color: black !important; */
   background-color: black !important;
 }
 
 .slick-slider {
   position: relative;
+ 
 }
 
 .card {
@@ -64,6 +70,20 @@ body {
    width: 100% !important;
   height: 100% !important;
   
+}
+
+.cards {
+  width: 300px !important;
+  height: 400px !important;
+}
+
+.cards img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.img1 {
+  object-fit: cover !important;
 }
 
 .slick-prev {
@@ -91,6 +111,10 @@ body {
   z-index: 10;
 }
 
+#slider-boxes {
+  display: flex !important;
+}
+
 
 .dAction:hover .icons {
   border: 2px solid white !important;
@@ -108,7 +132,7 @@ body {
   
       position: absolute !important;
       top: 24rem !important;
-      left: 25rem !important;
+      left: 40rem !important;
   
       z-index: 10;
     }
@@ -117,8 +141,8 @@ body {
      
   
       position: absolute !important;
-      top: 26rem !important;
-      right: 25rem !important;
+      top: 24rem !important;
+      right: 40rem !important;
   
       z-index: 10;
     }
@@ -132,7 +156,7 @@ body {
       /* left: 20rem !important; */
   
       position: absolute !important;
-      top: 23rem !important;
+      top: 16rem !important;
       left: 10rem !important;
   
       z-index: 10;
@@ -144,10 +168,14 @@ body {
           /* left: 20rem !important; */
     
           position: absolute !important;
-          top: 23rem !important;
+          top: 16rem !important;
           right: 10rem !important;
     
           z-index: 10;
+        }
+
+        .slideDiv {
+          height: 250px;
         }
   
 }
