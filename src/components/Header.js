@@ -79,7 +79,7 @@ const Header = () => {
             <Navbar bg="" expand="md">
               <Container>
                 <Navbar.Brand href="#">
-                  <span className="ms-4 text-[#EA3A51]">Maruti</span>
+                  <span className="ms-4 text-[#EA3A51] font-bold">Maruti</span>
                 </Navbar.Brand>
                 <Navbar.Toggle
                   aria-controls="my-nav"
