@@ -89,25 +89,25 @@ const Header = () => {
                   <Nav className="me-auto fw-bold">
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       Vehicles
                     </Nav.Link>
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       Blocks
                     </Nav.Link>
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       Services
                     </Nav.Link>
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       Experience
                     </Nav.Link>
@@ -115,13 +115,13 @@ const Header = () => {
                   <Nav className="me-auto fw-bold">
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       contact
                     </Nav.Link>
                     <Nav.Link
                       href="#"
-                      className="hover:border-solid border-b-2"
+                      className="hover:border-solid border-b-2 navLink"
                     >
                       Tabs
                     </Nav.Link>

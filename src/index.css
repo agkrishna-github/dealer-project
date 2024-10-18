@@ -123,6 +123,24 @@ body {
   color: white;
 }
 
+.navLink:hover {
+  color:chocolate !important;
+}
+
+.expBtn:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+.findBtn:hover {
+  background-color: white !important;
+    color: black !important;
+}
+
+.expnBtn:hover {
+  background-color: #4848cc !important;
+    color: white !important;
+}
+
 @media all and (min-width: 768px) {
   .main {
     display: flex;
