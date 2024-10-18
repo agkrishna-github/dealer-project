@@ -198,6 +198,12 @@ body {
           height: 250px;
         }
 
+        .slick-arrow:before {
+         
+          font-size: 35px !important;
+          
+        }
+
 
   
 }
