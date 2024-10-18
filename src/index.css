@@ -97,7 +97,7 @@ body {
   top: 22rem !important;
   left:  16rem !important;
   /* font-size: 13rem !important; */
-  z-index: 10;
+ 
 }
 
 
@@ -110,7 +110,7 @@ body {
   top: 16rem !important;
   right: 16rem !important;
 
-  z-index: 10;
+ 
 }
 
 #slider-boxes {
@@ -154,7 +154,7 @@ body {
       top: 22rem !important;
       left: 38rem !important;
   
-      z-index: 10;
+  
     }
   
     .slick-next {
@@ -164,7 +164,7 @@ body {
       top: 22rem !important;
       right: 40rem !important;
   
-      z-index: 10;
+  
     }
   
 }
@@ -179,7 +179,7 @@ body {
       top: 15rem !important;
       left: 7rem !important;
   
-      z-index: 10;
+      
     }
 
         .slick-next {
@@ -191,7 +191,7 @@ body {
           top: 15rem !important;
           right: 9rem !important;
     
-          z-index: 10;
+         
         }
 
         .slideDiv {
