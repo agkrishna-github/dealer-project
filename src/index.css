@@ -68,7 +68,8 @@ body {
 
 .card img {
    width: 100% !important;
-  height: 100% !important;
+  /* height: 100% !important; */
+  height: 130px !important;
   
 }
 
@@ -156,8 +157,8 @@ body {
       /* left: 20rem !important; */
   
       position: absolute !important;
-      top: 16rem !important;
-      left: 10rem !important;
+      top: 15rem !important;
+      left: 9rem !important;
   
       z-index: 10;
     }
@@ -168,8 +169,8 @@ body {
           /* left: 20rem !important; */
     
           position: absolute !important;
-          top: 16rem !important;
-          right: 10rem !important;
+          top: 15rem !important;
+          right: 9rem !important;
     
           z-index: 10;
         }
@@ -177,5 +178,7 @@ body {
         .slideDiv {
           height: 250px;
         }
+
+
   
 }

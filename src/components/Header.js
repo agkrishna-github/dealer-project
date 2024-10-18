@@ -66,10 +66,13 @@ const Header = () => {
         </Container>
       </Navbar>
     </section> */
-    <section className="sticky top-0 left-0 z-10 bg-white">
+    <section className="sticky top-0 left-0 z-10 bg-white ">
       <Container
         fluid
-        style={{ boxShadow: "2px solid black", marginBottom: "2rem" }}
+        style={{
+          boxShadow: "2px solid black",
+          marginBottom: "2rem",
+        }}
       >
         <Row>
           <Col>
@@ -84,14 +87,44 @@ const Header = () => {
                 />
                 <Navbar.Collapse id="my-nav">
                   <Nav className="me-auto fw-bold">
-                    <Nav.Link href="#">Vehicles</Nav.Link>
-                    <Nav.Link href="#">Blocks</Nav.Link>
-                    <Nav.Link href="#">Services</Nav.Link>
-                    <Nav.Link href="#">Experience</Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      Vehicles
+                    </Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      Blocks
+                    </Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      Services
+                    </Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      Experience
+                    </Nav.Link>
                   </Nav>
                   <Nav className="me-auto fw-bold">
-                    <Nav.Link href="#">contact</Nav.Link>
-                    <Nav.Link href="#">Tabs</Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      contact
+                    </Nav.Link>
+                    <Nav.Link
+                      href="#"
+                      className="hover:border-solid border-b-2"
+                    >
+                      Tabs
+                    </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>

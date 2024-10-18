@@ -30,7 +30,7 @@ const Hero = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
@@ -39,7 +39,7 @@ const Hero = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
@@ -143,7 +143,64 @@ const Hero = () => {
       </div>
 
       <div className="mb-2">
-        <Slider {...settings} className="flex justify-center items-center">
+        <Slider
+          {...settings}
+          className="flex justify-center items-center gap-x-2 w-11/12 mx-auto"
+        >
+          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+              <img
+                className="w-full h-full object-cover md:object-cover"
+                src={img1}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h5 className="">Swift</h5>
+              <p className="">New Swift</p>
+            </div>
+          </div>
+          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+              <img
+                className="w-full h-full object-cover md:object-cover"
+                src={img2}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h5 className="">Spresso</h5>
+              <p className="">New Spresso</p>
+            </div>
+          </div>
+          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+              <img
+                className="w-full h-full object-cover md:object-cover"
+                src={img3}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h5 className="">XL 6</h5>
+              <p className="">New XL6</p>
+            </div>
+          </div>
+          <div className="h-[350px] w-[400px] md:h-[250px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+              <img
+                className="w-full h-full object-cover md:object-cover"
+                src={img4}
+                alt=""
+              />
+            </div>
+            <div className="">
+              <h5 className="">Wagon R</h5>
+              <p className="">New Wagon R</p>
+            </div>
+          </div>
+        </Slider>
+        {/*  <Slider {...settings} className="flex justify-center items-center">
           <div className="w-[20rem] rounded h-[350px] slideDiv">
             <img className="w-full" src={img1} alt="" />
             <div className="px-6 py-4">
@@ -172,7 +229,7 @@ const Hero = () => {
               <p className="text-gray-700 text-base">New Spresso</p>
             </div>
           </div>
-        </Slider>
+        </Slider> */}
       </div>
       <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
