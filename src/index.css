@@ -168,6 +168,8 @@ content: none !important;
     /* background-attachment: fixed; */
     background-color: red !important;
     background-repeat: no-repeat !important;
+
+    height: calc(100vh - 64px);
 }
 
 .heroImage {
@@ -290,6 +292,12 @@ content: none !important;
 .addImg button {
   margin-left: 3rem;
 }
+
+
+.hero {
+  height: calc(100vh - 70px) ;
+}
+
     /*     .dAction {
           display: flex;
           flex-direction: column;

@@ -101,7 +101,7 @@ const Hero = () => {
     <section className="">
       {/* <div className="p-1 flex flex-col-reverse justify-center items-center mb-3 gap-3 min-h-32 main"> */}
 
-      <div className="newBgDiv h-screen relative" id="home">
+      <div className="newBgDiv relative hero" id="home">
         <div className="flex flex-col justify-center gap-y-4 md:gap-y-0 h-[400px] p-3 text-white absolute top-20 right-20 addImg">
           <h2 className="md:text-xl">India's Safest Car is Mahindra</h2>
           <div className="font-semibold">
