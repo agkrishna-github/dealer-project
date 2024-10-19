@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import ciazImg from "../images/ciaz.webp";
-import img1 from "../images/img1.webp";
+import img1 from "../images/mahindra1.webp";
+import img2 from "../images/mahindra2.webp";
+import img3 from "../images/mahindra3.jpg";
+import img4 from "../images/mahindra4.webp";
+/* import img1 from "../images/img1.webp";
 import img2 from "../images/img2.jpg";
 import img3 from "../images/img3.webp";
-import img4 from "../images/img4.jpg";
+import img4 from "../images/img4.jpg"; */
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -190,63 +194,63 @@ const Hero = () => {
           {...settings}
           className="flex justify-center items-center gap-x-2 w-11/12 mx-auto"
         >
-          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
-            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
                 src={img1}
                 alt=""
               />
             </div>
-            <div className="">
-              <h5 className="">Swift</h5>
-              <p className="">New Swift</p>
+            <div className="text-center">
+              <h5 className="">Bolero</h5>
+              <p className="">Mahindra New Bolero</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
-            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
                 src={img2}
                 alt=""
               />
             </div>
-            <div className="">
-              <h5 className="">Spresso</h5>
-              <p className="">New Spresso</p>
+            <div className="text-center">
+              <h5 className="">SUV 500</h5>
+              <p className="">New Mahendra SUV 500</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
-            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
                 src={img3}
                 alt=""
               />
             </div>
-            <div className="">
-              <h5 className="">XL 6</h5>
-              <p className="">New XL6</p>
+            <div className="text-center">
+              <h5 className="">Scorpio</h5>
+              <p className="">New Mahindra Scorpio</p>
             </div>
           </div>
-          <div className="h-[350px] w-[400px] md:h-[200px] md:w-[300px] px-1 py-2">
-            <div className="w-full h-[250px] md:h-[100px] md:w-[160px] ">
+          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+            <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
                 src={img4}
                 alt=""
               />
             </div>
-            <div className="">
-              <h5 className="">Wagon R</h5>
-              <p className="">New Wagon R</p>
+            <div className="text-center">
+              <h5 className="">Thar</h5>
+              <p className="">New Mahindra Thar</p>
             </div>
           </div>
         </Slider>
       </div>
       <div className="mt-16 w-[90%]  mx-auto lg:mt-16 qactions" id="buy">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
-        <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
+        <div className="p-3 flex flex-wrap gap-x-6 gap-6">
           <div className="w-[300px] hover:bg-[#EA3A51]  flex gap-6 p-3 dAction">
             <div
               className="p-3 h-[50px] min-w-[50px] flex justify-center items-center text-red-500 mb-3 icons"
