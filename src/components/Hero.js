@@ -28,7 +28,7 @@ const Arrow = (props) => {
 const NextArrow = (props) => (
   <button
     {...props}
-    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[50%] w-10 h-10 nextArrow"
+    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[50%] w-10 h-10  hover:bg-red-500 hover:text-white nextArrow"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const NextArrow = (props) => (
 const PrevArrow = (props) => (
   <button
     {...props}
-    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[45%] z-30 w-10 h-10 prevArrow"
+    className="text-red-500 rounded-full border-red-500 absolute -bottom-10 left-[45%] z-30 w-10 h-10  hover:bg-red-500 hover:text-white prevArrow "
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -75,11 +75,16 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    /* autoplay: true,
+    autoplaySpeed: 4000,
+    cssEase: "linear", */
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     /* nextArrow: <Arrow />,
     prevArrow: <Arrow />, */
     initialSlide: 0,
+
+    // cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -239,7 +244,7 @@ const Hero = () => {
           </div>
         </Slider>
       </div>
-      <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions" id="buy">
+      <div className="mt-16 w-[90%]  mx-auto lg:mt-16 qactions" id="buy">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
         <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
           <div className="w-[300px] hover:bg-[#EA3A51]  flex gap-6 p-3 dAction">

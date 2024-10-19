@@ -73,7 +73,7 @@ const Header = () => {
     </section> */
 
     <section className="sticky top-0 left-0 z-50 bg-white">
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
         <Container>
           <Navbar.Brand
             href="#home"

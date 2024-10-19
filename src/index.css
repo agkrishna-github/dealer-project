@@ -75,6 +75,7 @@ content: none !important;
 
 .container {
   background-color: white;
+  /* border-bottom: 1px solid black; */
 }
 
 .card img {
