@@ -7,7 +7,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
  */
 
-import { Col, Container, Navbar, Row, Nav } from "react-bootstrap";
+// import { Col, Container, Navbar, Row, Nav } from "react-bootstrap";
+
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   return (
@@ -66,7 +71,72 @@ const Header = () => {
         </Container>
       </Navbar>
     </section> */
-    <section className="sticky top-0 left-0 z-50 bg-white ">
+
+    <section className="sticky top-0 left-0 z-50 bg-white">
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand
+            href="#home"
+            className="text-red-500"
+            style={{ color: "red", fontWeight: "bold" }}
+          >
+            mahindra
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            style={{ color: "red", fontWeight: "bold" }}
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto fw-bold">
+              <Nav.Link
+                href="#vehicles"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Vehicles
+              </Nav.Link>
+              <Nav.Link
+                href="#buy"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Buy
+              </Nav.Link>
+              <Nav.Link
+                href="#"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Services
+              </Nav.Link>
+              <Nav.Link
+                href="#"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Experience
+              </Nav.Link>
+            </Nav>
+            <Nav className="me-auto fw-bold">
+              <Nav.Link
+                href="#"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Test Drive
+              </Nav.Link>
+              <Nav.Link
+                href="#contact"
+                className="hover:border-solid border-b-2 navLink"
+              >
+                Locate Us
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </section>
+  );
+};
+
+export default Header;
+/* 
+<section className="sticky top-0 left-0 z-50 bg-white ">
       <Container
         fluid
         style={{
@@ -157,10 +227,6 @@ const Header = () => {
               </Container>
             </Navbar>
           </Col>
-        </Row> */}
+        </Row> 
       </Container>
-    </section>
-  );
-};
-
-export default Header;
+    </section> */

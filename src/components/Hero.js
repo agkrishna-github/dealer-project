@@ -112,7 +112,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="p-2 min-h-[120px] bg-black text-white flex flex-col justify-center items-center gap-y-6 pb-4">
+      <div className="p-2 min-h-[120px] bg-slate-700 text-white flex flex-col justify-center items-center gap-y-6 pb-4">
         <h5 className="p-3 md:text-sm">
           I am Looking for a light commercial vehicle for the Perpose of milage
         </h5>
