@@ -66,20 +66,23 @@ const Header = () => {
         </Container>
       </Navbar>
     </section> */
-    <section className="sticky top-0 left-0 z-10 bg-white ">
+    <section className="sticky top-0 left-0 z-50 bg-white ">
       <Container
         fluid
         style={{
           boxShadow: "2px solid black",
-          marginBottom: "2rem",
+          zIndex: "200px",
+          // marginBottom: "2rem",
         }}
       >
         <Row>
           <Col>
             <Navbar bg="" expand="md">
               <Container>
-                <Navbar.Brand href="#">
-                  <span className="ms-4 text-[#EA3A51] font-bold">Maruti</span>
+                <Navbar.Brand href="#home">
+                  <span className="ms-4 text-[#EA3A51] font-bold">
+                    mahindra
+                  </span>
                 </Navbar.Brand>
                 <Navbar.Toggle
                   aria-controls="my-nav"
@@ -88,16 +91,16 @@ const Header = () => {
                 <Navbar.Collapse id="my-nav">
                   <Nav className="me-auto fw-bold">
                     <Nav.Link
-                      href="#"
+                      href="#vehicles"
                       className="hover:border-solid border-b-2 navLink"
                     >
                       Vehicles
                     </Nav.Link>
                     <Nav.Link
-                      href="#"
+                      href="#buy"
                       className="hover:border-solid border-b-2 navLink"
                     >
-                      Blocks
+                      Buy
                     </Nav.Link>
                     <Nav.Link
                       href="#"
@@ -117,13 +120,13 @@ const Header = () => {
                       href="#"
                       className="hover:border-solid border-b-2 navLink"
                     >
-                      contact
+                      Test Drive
                     </Nav.Link>
                     <Nav.Link
-                      href="#"
+                      href="#contact"
                       className="hover:border-solid border-b-2 navLink"
                     >
-                      Tabs
+                      Locate Us
                     </Nav.Link>
                   </Nav>
                 </Navbar.Collapse>

@@ -15,7 +15,7 @@ body {
 }
 
 .collapse {
-  visibility: visible;
+  /* visibility: visible; */
 }
 /* 
 .container {
@@ -41,6 +41,7 @@ body {
 .navbar {
   padding: 0 !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 60px;
 }
 
 .slick-arrow:before {
@@ -68,7 +69,9 @@ content: none !important;
   height: 400px !important;
 }
 
-
+.container {
+  background-color: white;
+}
 
 .card img {
    width: 100% !important;
@@ -141,8 +144,8 @@ content: none !important;
 }
 
 .expBtn:hover {
-  background-color: transparent !important;
-  color: black !important;
+  background-color: black !important;
+  color: white !important;
 }
 .findBtn:hover {
   background-color: white !important;
@@ -152,6 +155,24 @@ content: none !important;
 .expnBtn:hover {
   background-color: #4848cc !important;
     color: white !important;
+}
+
+.newBgDiv {
+  background-image: url('./images/mahindraxuv.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    /* background-attachment: fixed; */
+    background-color: red !important;
+    background-repeat: no-repeat !important;
+}
+
+.heroImage {
+  background-image: url('./images/mahindraxuv.jpg') !important;
+  background-position: left bottom !important;
+  background-size: cover !important;
+  /* background-attachment: fixed; */
+  background-color: red !important;
+  background-repeat: no-repeat !important;
 }
 
 @media all and (min-width: 768px) {
@@ -226,6 +247,45 @@ content: none !important;
           left: 100px !important;
         }
 
+        .heroImage {
+          height: 400px;
+          padding-right: 300px;
+        }
+.heroText{
+  /* width: 100%; */
+  height: 200px !important;
+  left: 60px !important;
+  bottom: 0 !important;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newBgDiv {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.addImg {
+  margin-top: -3.5rem;
+  height: 200px;
+  left: 4rem;
+
+}
+
+.addImg h2,
+.addImg div
+{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.addImg button {
+  margin-left: 3rem;
+}
     /*     .dAction {
           display: flex;
           flex-direction: column;

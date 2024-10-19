@@ -99,22 +99,15 @@ const Hero = () => {
   const [vehNav, setVehNav] = useState("#");
   return (
     <section className="">
-      <div className="p-1 flex flex-col-reverse justify-center items-center mb-3 gap-3 min-h-32 main">
-        <div className="flex  justify-center items-center">
-          <img
-            src={ciazImg}
-            alt="Hero Image"
-            width={664}
-            height={374}
-            className="h-full w-full"
-          />
-        </div>
-        <div className="flex flex-col justify-center items-center gap-y-4 md:gap-y-0 h-full p-3">
-          <h2>India's Safest Car is Maruti</h2>
+      {/* <div className="p-1 flex flex-col-reverse justify-center items-center mb-3 gap-3 min-h-32 main"> */}
+
+      <div className="newBgDiv h-screen relative" id="home">
+        <div className="flex flex-col justify-center gap-y-4 md:gap-y-0 h-[400px] p-3 text-white absolute top-20 right-20 addImg">
+          <h2 className="md:text-xl">India's Safest Car is Mahindra</h2>
           <div className="font-semibold">
-            Maruti is the best car service provider
+            Mahindra is the best car service provider
           </div>
-          <button className="inline-block px-3 py-2 bg-black text-white rounded-md cursor-pointer my-3 expBtn">
+          <button className="inline-block w-fit bg-transparent text-white border-solid border-white px-3 py-2  rounded-md cursor-pointer my-3 expBtn ">
             Explore
           </button>
         </div>
@@ -131,7 +124,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="p-3 mt-10 ">
+      <div className="p-3 mt-10 " id="vehicles">
         <h2 className="text-center p-2 mb-4">Our Vehicles</h2>
         <div className="flex justify-center items-center gap-1 mb-3 md:text-sm md:font-bold">
           <div
@@ -246,7 +239,7 @@ const Hero = () => {
           </div>
         </Slider>
       </div>
-      <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions">
+      <div className="mt-16 w-11/12 mx-auto lg:mt-16 qactions" id="buy">
         <h2 className="p-2 text-center mb-3 mt-5">Quick Actions</h2>
         <div className="p-3 flex flex-wrap gap-x-6 gap-6 md:flex-nowrap">
           <div className="w-[300px] hover:bg-[#EA3A51]  flex gap-6 p-3 dAction">
@@ -327,7 +320,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <div className="p-2 flex flex-col bg-slate-500 text-white">
+      <div className="p-2 flex flex-col bg-slate-500 text-white" id="contact">
         <div className="p-2">
           <h4 className="mb-3">Maruti Dealers</h4>
           <p className="mb-3">
