@@ -13,6 +13,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { IoIosArrowForward } from "react-icons/io";
+import SuvList from "./SuvList";
 
 const Header = () => {
   return (
@@ -88,12 +90,25 @@ const Header = () => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto fw-bold">
-              <Nav.Link
-                href="#vehicles"
-                className="hover:border-solid border-b-2 navLink"
+              <NavDropdown
+                title="Vehicles"
+                id="collapsible-nav-dropdown"
+                className="navDropDown"
               >
-                Vehicles
-              </Nav.Link>
+                <NavDropdown.Item href="#action/3.2" className="suvDropdown">
+                  SUV
+                  <SuvList />
+                </NavDropdown.Item>
+
+                <NavDropdown.Item href="#action/3.2">PICK UPS</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Light Commercial
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Electric</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">
+                  Trucks & Buses
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link
                 href="#buy"
                 className="hover:border-solid border-b-2 navLink"

@@ -18,9 +18,7 @@ body {
   color: red !important;
 }
 
-.collapse {
-  /* visibility: visible; */
-}
+
 /* 
 .container {
   padding: 0 !important;
@@ -42,10 +40,64 @@ body {
   /* padding: 0.5rem !important; */
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.dropdown-toggle::after {
+display: none !important;
+}
+
+.dropdown-item:hover {
+  background-color: red !important;
+  color:white !important;
+}
+
+.navDropDown {
+  position: relative;
+}
+
+/* avadan */
+
+.suvList {
+  display: none !important;
+
+  position: absolute !important;
+  top: -3.1rem !important;
+  left: 15.6rem !important;
+
+  width: 800px !important;
+  height: 400px !important;
+  border-radius: 5px;
+}
+
+.suvDropdown {
+  width: 250px !important;
+}
+
+.suvDropdown .dropdown-menu {
+  display: none !important;
+}
+
+.suvDropdown:hover .suvList {
+  display: block !important;
+ 
+  /* position: absolute !important;
+    top: -3.1rem !important;
+    left: 15.6rem !important;
+  
+    width: 800px !important;
+    height: 400px !important; */
+}
+
+.suvDropdown {
+  position: relative !important;
+}
+
 .navbar {
   padding: 0 !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  height: 60px;
+  height: 45px;
 }
 
 .slick-arrow:before {
@@ -306,6 +358,8 @@ content: none !important;
   align-items: center;
 }
 
+
+
 .sliderh5 {
   font-size: 16px;
   font-weight: bolder;
@@ -314,6 +368,20 @@ content: none !important;
 .sliderp {
   font-size: 13px;
     font-weight: bolder;
+}
+
+.suvList {
+  top: 3rem !important;
+  left: -1rem !important;
+  height: 100vh !important;
+  overflow: scroll !important;
+}
+
+.suvListDiv {
+  flex-direction: column;
+
+ /*  top: 0;
+  left: 0; */
 }
  
 

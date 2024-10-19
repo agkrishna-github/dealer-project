@@ -8,9 +8,15 @@ module.exports = {
 
       md: { max: "720px" },
     },
+    /*  sm: { min: "640px" },
+      md: { min: "768px" },
+      lg: { min: "1024px" },
+      xl: { min: "1280px" },
+      xxl: { min: "1536px" }, */
   },
   plugins: [],
   corePlugins: {
+    // preflight: true,
     preflight: false,
   },
 };
