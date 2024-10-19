@@ -194,7 +194,7 @@ const Hero = () => {
           {...settings}
           className="flex justify-center items-center gap-x-2 w-11/12 mx-auto"
         >
-          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+          <div className="h-[300px] w-[350px] md:h-[200px]  px-1 py-2 imgDiv2">
             <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -203,11 +203,11 @@ const Hero = () => {
               />
             </div>
             <div className="text-center">
-              <h5 className="">Bolero</h5>
-              <p className="">Mahindra New Bolero</p>
+              <h5 className="sliderh5">Bolero</h5>
+              <p className="sliderp">Mahindra New Bolero</p>
             </div>
           </div>
-          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+          <div className="h-[300px] w-[350px] md:h-[200px]  px-1 py-2 imgDiv2">
             <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -216,11 +216,11 @@ const Hero = () => {
               />
             </div>
             <div className="text-center">
-              <h5 className="">SUV 500</h5>
-              <p className="">New Mahendra SUV 500</p>
+              <h5 className="sliderh5">SUV 500</h5>
+              <p className="sliderp">New Mahendra SUV 500</p>
             </div>
           </div>
-          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+          <div className="h-[300px] w-[350px] md:h-[200px]  px-1 py-2 imgDiv2">
             <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -229,11 +229,11 @@ const Hero = () => {
               />
             </div>
             <div className="text-center">
-              <h5 className="">Scorpio</h5>
-              <p className="">New Mahindra Scorpio</p>
+              <h5 className="sliderh5">Scorpio</h5>
+              <p className="sliderp">New Mahindra Scorpio</p>
             </div>
           </div>
-          <div className="h-[300px] w-[350px] md:h-[200px] md:w-[300px] px-1 py-2">
+          <div className="h-[300px] w-[350px] md:h-[200px]  px-1 py-2 imgDiv2">
             <div className="w-full h-[200px] md:h-[100px] md:w-[160px] ">
               <img
                 className="w-full h-full object-cover md:object-cover"
@@ -242,8 +242,8 @@ const Hero = () => {
               />
             </div>
             <div className="text-center">
-              <h5 className="">Thar</h5>
-              <p className="">New Mahindra Thar</p>
+              <h5 className="sliderh5">Thar</h5>
+              <p className="sliderp">New Mahindra Thar</p>
             </div>
           </div>
         </Slider>

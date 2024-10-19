@@ -299,6 +299,24 @@ content: none !important;
   height: calc(100vh - 70px) ;
 }
 
+ .imgDiv2 {
+  width: 160px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderh5 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.sliderp {
+  font-size: 13px;
+    font-weight: bolder;
+}
+ 
+
        /*  .dAction {
          width: 150px;
          height: auto;
