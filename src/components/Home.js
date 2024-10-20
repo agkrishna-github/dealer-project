@@ -4,6 +4,9 @@ import OurVehicleList from "./OurVehicleList";
 import Just from "./Just";
 import ActionsPage from "./ActionsPage";
 import Footer from "./Footer";
+import InNewsPage from "./InNewsPage";
+import LocatePage from "./LocatePage";
+import LastPage from "./LastPage";
 
 const Home = () => {
   return (
@@ -12,6 +15,9 @@ const Home = () => {
       <Just />
       <OurVehicleList />
       <ActionsPage />
+      <InNewsPage />
+      <LocatePage />
+      {/* <LastPage /> */}
       <Footer />
     </div>
   );

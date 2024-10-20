@@ -63,7 +63,7 @@ display: none !important;
   display: none !important;
 
   position: absolute !important;
-  top: -3.1rem !important;
+  top: 0 !important;
   left: 15.6rem !important;
 
   width: 800px !important;
@@ -77,6 +77,17 @@ display: none !important;
 
 .suvDropdown .dropdown-menu {
   display: none !important;
+}
+/* 
+.newsMainDiv {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+} */
+
+.newsMainDiv {
+  position: relative !important;
 }
 
 .suvDropdown:hover .suvList {
@@ -106,6 +117,13 @@ display: none !important;
   background-color: none !important;
   
 }
+/* 
+.imgDiv3 {
+  width: 200px !important;
+  height: 200px !important;
+
+ 
+} */
 
 .slick-arrow:before{
   /* font-size: 10rem !important; */
@@ -119,6 +137,8 @@ content: none !important;
   position: relative !important;
  
 }
+
+
 
 .card {
   width: 400px !important;
@@ -186,6 +206,18 @@ content: none !important;
  
 }
 
+.newsPrevArrow {
+  position: absolute !important;
+    top: 50% !important;
+    left: -5rem !important;
+}
+
+.newsNextArrow {
+  position: absolute !important;
+  top: 50% !important;
+  left: 100% !important;
+}
+
 #slider-boxes {
   display: flex !important;
 }
@@ -232,6 +264,10 @@ content: none !important;
   /* background-attachment: fixed; */
   background-color: red !important;
   background-repeat: no-repeat !important;
+}
+
+.footerDiv {
+  text-align: center !important;
 }
 
 @media all and (min-width: 768px) {
@@ -297,6 +333,15 @@ content: none !important;
           
         }
 
+        .maps {
+          width: 380px !important;
+          height: 280px !important;
+        }
+
+        .location {
+            display: none !important;
+        }
+
         .nextArrow {
           left: 50% !important;
           
@@ -358,6 +403,10 @@ content: none !important;
   align-items: center;
 }
 
+.footerDiv {
+  width: 100% !important;
+  text-align: center !important;
+}
 
 
 .sliderh5 {
@@ -382,6 +431,10 @@ content: none !important;
 
  /*  top: 0;
   left: 0; */
+}
+
+.newsPrevArrow {
+  left: -2rem !important;
 }
  
 

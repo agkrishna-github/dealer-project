@@ -35,7 +35,7 @@ const SuvList = () => {
   ];
 
   return (
-    <div className="bg-white text-black suvList">
+    <div className="bg-white text-black suvList border-solid border-black">
       <div className="flex flex-wrap gap-2 suvListDiv">
         {SuvList.map((item, index) => (
           <div className="w-[250px] h-[150px]">

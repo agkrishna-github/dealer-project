@@ -15,8 +15,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { IoIosArrowForward } from "react-icons/io";
 import SuvList from "./SuvList";
+import { useState } from "react";
 
 const Header = () => {
+  const [expanded, setExpanded] = useState(false);
   return (
     /*  <section className="p-3 flex justify-between shadow-md shadow-black">
       <div className="flex gap-2 text-[0.7rem] font-semibold">
